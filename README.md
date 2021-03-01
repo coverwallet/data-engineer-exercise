@@ -24,15 +24,29 @@ previous CSV files to either a MongoDB or a PostgreSQL database.
   a free MongoDB as a Service.
   * If you prefer a PostgreSQL database, you can use [ElephantSQL](https://www.elephantsql.com/plans.html)
   to start a free PostgreSQL server.
-4. [OPTIONAL] In the same directory, create a text file called `query.txt` with the
+  * If you do not want to use any of this cloud provider you can start a Docker Container in your local host
+  and insert the data there.
+4. Once you load the data into the DB you choose, create a directory inside the working folder and name it `app`.
+Inside the folder build an API to consume the data you just load into the db. Choose the framework, 
+or programming language you want there is no restriction. The API should have a persistence in a db.
+5. [OPTIONAL] In the `working_folder` create a directory call `querys` and create a text file called `query.txt` with the
 query code to get a report of how accurate is `wind_speed` prediction with time.
   * Taking day X as a reference, which is the deviation from `wind_speed(X)` compared
  with previous predictions of the same day X.
-5. [OPTIONAL] Following the Serverless approach, put this pipeline to automatically
+6. [OPTIONAL] Following the Serverless approach, put this pipeline to automatically
 run on a daily basis.
   * You can use Heroku, AWS Free Tier or Google Cloud.
+  * You can use the Serverless Framework and just make the yaml config for the deploy.
+  * You can create a Dockerfile with the enviroment and just write in a txt how you will set up a cron job.
   * Add another document in the `working_folder` explaining how you did it and
   some evidences.
+7. [OPTIONAL] Try yo load the CSV files donwload from the api using an event processing platform. You can choose the 
+   event platform you want Kafka, RabbitMQ, Celery... etc. There is not need to create the full architecture code, but
+   otherwise create a file called streaming_events.txt explaining us how will you build this architecture.
+8. [OPTIONAL] Create the enviroment to deploy your API in to a production enviroment.
+  * You can use a Docker Compose with the App.
+  * You can follow a Serverless Approach and use the Serverless Framework.
+  * You can use other architecture to deploy.
 
 ## How to submit your exercise?
 The submitting process consist on _encrypting your files with our public
