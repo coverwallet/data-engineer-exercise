@@ -37,7 +37,7 @@ or programming language you want, there is no restriction. The API should have a
     * `Wind Speed`: measure of the speed of the wind
     * `Temperature`: measure of the temperature  
             
-   Load this data into your db and create a file called `query.txt` in the `querys` directory with the query code to get a report of:
+   Load this data into your db and create a file called `query.txt` in the `querys` directory with the SQL query code to get a report of:
   * How accurate is `wind_speed` prediction with time.
   * Taking day X as a reference, which is the deviation from `wind_speed(X)` compared with previous predictions of the same day X.
 7. [OPTIONAL] Following the Serverless approach, put this pipeline to automatically
